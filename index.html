@@ -13,43 +13,141 @@
     <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 
-    <!-- <div class="loader-wrapper">
+    <div class="loader-wrapper">
         <div class="loader">
           <div class="ball"></div>
           <div class="ball"></div>
           <div class="ball"></div>
         </div>
-      </div> -->
+      </div>
 
 
+      <div class="modal_container">
+        <div class="modal">
+            <div class="modal_content">
+                <span class="modal_close">&times;</span>
+                <div class="modal_about">
+                    <h3 class="modal_aboutMe_title">Обо мне.</h3>
+                    <p class="modal_aboutMe_descrip">Привет, я начинающий Front-End разработчик из Донецка. Я люблю сидеть до поздна за компьютером, писать сайты и
+                        постоянно улучшать свои навыки. Мои интересы включают в себя присоединение к команде увлеченных людей, личный
+                        рост и создание крутых сайтов.
 
-    <section class="home" class="pfblock-image screen-height" style="height: 700px">
+                        Мне не страшно обучения на рабочем месте и динамическая командная работа. 
+                        Лично я рад присоединиться к скучному, простому и редко развивающемуся миру технологий.
+                    </p>
+                </div>
+                <div class="modal_soc">
+                    <a class="modal_card_icons" href="https://vk.com/id102919570"><i class="fa-brands fa-vk"></i></a>
 
+                    <a class="modal_card_icons" href="#"><i class="fa-brands fa-telegram"></i></a>
 
+                    <a class="modal_card_icons" href="https://github.com/Rimpul1?tab=repositories"><i class="fa-brands fa-github"></i></a>
 
-        <div class="navbar">
-            <ul class="nav_list">
-                <li class="nav_item"><a href="" class="nav_link">Проекты</a></li>
-                <li class="nav_item"><a href="" class="nav_link">Контакты</a></li>
-                <li class="nav_item"><a href="" class="nav_link">Навыки</a></li>
-            </ul>
+                </div>
+            </div>
+            <div class="modal_about_me">
+                <input id="modal_name" type="text" placeholder="Name">
+                <input id="modal_email" type="text" placeholder="E-mail">
+                <textarea id="modal_message" placeholder="Message" type="text"></textarea>
+
+                <div class="modal_container_btn">
+                    <div class="center_modal">
+                <button class="modal_send" >
+                    <svg id="border_modal" width="180px" height="60px" viewBox="0 0 180 60" >
+                        <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                        <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                      </svg>
+                      <span>Отправить</span>
+                </button>
+                    </div>
+                </div>
+            </div>
         </div>
+    </div>
+    
+<nav>
+    <div class="container">
+    <div class="navbar">
+        <ul class="nav_list">
+            <li class="nav_item"><a href="" class="nav_link">Проекты</a></li>
+            <li class="nav_item"><a href="" class="nav_link">Контакты</a></li>
+            <li class="nav_item"><a href="" class="nav_link">Навыки</a></li>
+        </ul>
+    </div>
+</div>
+</nav>
+    
+
+
+    <section class="home">
+
 
         <div class="container">
 
+
+        <ul class="scen">
+            <li id="layer1" class="layer" data-depth="0.3">
+                <img src="./images/rectangle.png" alt="">
+            </li>
+            <li id="layer2" class="layer" data-depth="1">
+                <img src="./images/triangle.png" alt="">
+            </li>
+            <li id="layer3" class="layer" data-depth="0.7">
+                <img src="./images/pattern.png" alt="">
+            </li>
+            <li id="layer4" class="layer" data-depth="0.5">
+                <img src="./images/zigzag-lines-in-side-view-position.png" alt="">
+            </li>
+            <li id="layer5" class="layer" data-depth="0.6">
+                <img src="./images/pattern.png" alt="">
+            </li>
+            <li id="layer6" class="layer" data-depth="0.9">
+                <img src="./images/zigzag-lines-in-side-view-position.png" alt="">
+            </li>
+            <li id="layer7" class="layer" data-depth="1.2">
+                <img src="./images/zigzag-lines-in-side-view-position.png" alt="">
+            </li>
+            <li id="layer9" class="layer" data-depth="0.2">
+                <img src="./images/triangle.png" alt="">
+            </li>
+            <li id="layer10" class="layer" data-depth="0.2">
+                <img src="./images/rectangle.png" alt="">
+            </li>
+            <li id="layer11" class="layer" data-depth="0.2">
+                <img src="./images/rectangle.png" alt="">
+            </li>
+            <li id="layer12" class="layer" data-depth="0.2">
+                <img src="./images/rectangle.png" alt="">
+            </li>
+            <li id="layer13" class="layer" data-depth="0.2">
+                <img src="./images/triangle.png" alt="">
+            </li>
+            <li id="layer14" class="layer" data-depth="0.2">
+                <img src="./images/zigzag-lines-in-side-view-position.png" alt="">
+            </li>
+            <li id="layer15" class="layer" data-depth="0.2">
+                <img src="./images/zigzag-lines-in-side-view-position.png" alt="">
+            </li>
+            <li id="layer16" class="layer" data-depth="0.2">
+                <img src="./images/zigzag-lines-in-side-view-position.png" alt="">
+            </li>
+        </ul>
+
+
             <div class="home_start">
                 <div class="home_text">
-
                     <h1 class="home_title wow animate__animated animate__fadeIn animate__slower-5s">Сергей<br>
                     Сухановский</h1>
                     <p class="home_descrip wow animate__animated animate__fadeIn animate__slower-5s">Веб-программист</p>
-
 
 
                     <div class="about_container_btn">
@@ -64,52 +162,10 @@
                         </div>
                     </div>
                    
-                    <div class="modal_container">
-                        <div class="modal">
-                            <div class="modal_content">
-                                <span class="modal_close">&times;</span>
-                                <div class="modal_about">
-                                    <h3 class="modal_aboutMe_title">Обо мне.</h3>
-                                    <p class="modal_aboutMe_descrip">Привет, я начинающий Front-End разработчик из Донецка. Я люблю сидеть до поздна за компьютером, писать сайты и
-                                        постоянно улучшать свои навыки. Мои интересы включают в себя присоединение к команде увлеченных людей, личный
-                                        рост и создание крутых сайтов.
 
-                                        Мне не страшно обучения на рабочем месте и динамическая командная работа. 
-                                        Лично я рад присоединиться к скучному, простому и редко развивающемуся миру технологий.
-                                    </p>
-                                </div>
-                                <div class="modal_soc">
-                                    <a class="modal_card_icons" href="https://vk.com/id102919570"><i class="fa-brands fa-vk"></i></a>
-
-                                    <a class="modal_card_icons" href="#"><i class="fa-brands fa-telegram"></i></a>
-
-                                    <a class="modal_card_icons" href="https://github.com/Rimpul1?tab=repositories"><i class="fa-brands fa-github"></i></a>
-
-                                </div>
-                            </div>
-                            <div class="modal_about_me">
-                                <input id="modal_name" type="text" placeholder="Name">
-                                <input id="modal_email" type="text" placeholder="E-mail">
-                                <textarea id="modal_message" placeholder="Message" type="text"></textarea>
-
-                                <div class="modal_container_btn">
-                                    <div class="center_modal">
-                                <button class="modal_send" >
-                                    <svg id="border_modal" width="180px" height="60px" viewBox="0 0 180 60" >
-                                        <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
-                                        <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
-                                      </svg>
-                                      <span>Отправить</span>
-                                </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
-    </div>
     </section>
 
 
@@ -117,6 +173,13 @@
     <section id="skills">
 
         <div class="container">
+
+            <div class="lines1"></div>
+            <div class="lines2"></div>
+            <div class="lines3"></div>
+
+
+
             <div class="skills_head">
                 <h1 class="skills_title wow animate__animated animate__fadeIn animate__slower-3s">Навыки</h1>
             </div>
@@ -148,6 +211,9 @@
     <section id="portfolio">
 
         <div class="container">
+
+
+
             <div class="port_head">
 
                 <h3 class="port_Section_Name">Проекты</h3>
@@ -174,7 +240,7 @@
                         </div>
 
                         <div class="port_sait wow animate__animated animate__fadeInRight" data-wow-offset="10">
-                            <img src="./images/dart-site2.png" alt="">
+                            <img src="./images/dart-site.png" alt="">
                         </div>
                     </div>
                 </li>
@@ -197,7 +263,7 @@
                         </div>
 
                         <div class="port_sait wow animate__animated animate__fadeInLeft" data-wow-offset="10"" >
-                        <img src=" ./images/wbp-site3.png" alt="">
+                        <img src=" ./images/wbp-site.png" alt="">
                         </div>
 
                     </div>
@@ -219,7 +285,7 @@
                         </div>
 
                         <div class="port_sait wow animate__animated animate__fadeInRight" data-wow-offset="10">
-                            <img src="./images/flaby-site1.png" alt="">
+                            <img src="./images/flaby-site.png" alt="">
                         </div>
                     </div>
                 </li>
@@ -229,10 +295,35 @@
 
     <footer id="footer">
 
-            <div class="footer_name">
+        <div class="container">
+
+
+            <div class="footer_line1"></div>
+            <div class="footer_line2"></div>
+            <div class="footer_line3"></div>
+
+
+
+        <div class="footer_head">
+            <h2 class="footer_title">Контакты</h2>
+            
+        </div>
+
+        <ul class="footer_contacts">
+
+            <input id="footer_contact" type="text" placeholder="Name">
+            <input id="footer_contact" type="text" placeholder="E-mail">
+            <textarea id="footer_contact" placeholder="Message" type="text"></textarea>
+            <input class="button_form" type="submit" value="Отправить">
+        </ul>
+
+            <!-- <div class="footer_name">
         <h3 class="footer_first">Made by <span>Sergey Suhanovskiy</span></h3>
         <h3 class="footer_first">Disigned with <span>Olesya Gorskih</span></h3>
-            </div>
+            </div> -->
+
+
+
 
             <div class="footer_icons">
 
@@ -243,6 +334,7 @@
                 <a class="footer_icon" href="https://github.com/Rimpul1?tab=repositories"><i class="fa-brands fa-github"></i></a>
 
             </div>
+        </div>
     </footer>
 
 
@@ -252,7 +344,7 @@
         new WOW().init();
     </script>
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>

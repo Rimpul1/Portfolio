@@ -41,6 +41,18 @@ function toggleModal(){
 
 
 window.onload = function (){
-    let preloader = document.getElementsByClassName(".loader")
-    preloader.style.display = "none";
+    let preloader = document.querySelector(".loader-wrapper");
+    setTimeout(function(){
+        preloader.style.transform = "translate(-200%)";
+        document.documentElement.style.overflowY = "scroll";
+    }, 500)
 };
+
+
+
+// ПАРАЛАКС
+
+var scene = document.querySelector('.scen');
+var parallaxInstance = new Parallax(scene);
+
+// ПАРАЛАКС
