@@ -3,7 +3,8 @@
     padding: 0;
     font-family: 'Play', sans-serif;
 }
-html{
+html, body{
+    scroll-behavior: smooth;
     overflow-y: hidden;
 }
 h1{
@@ -187,7 +188,7 @@ ul{
 
 #layer1 img{
     position: absolute;
-    right: 207px;
+    right: 9px;
 }
 #layer2 img{
     position: absolute;
@@ -197,17 +198,16 @@ ul{
 #layer3 img{
     position: absolute;
     top: 493px;
-    left: 355px;
+    right: 20px;
 }
 #layer4 img{
     position: absolute;
     top: 493px;
-    left: 355px;
+    left: 692px;
 }
 #layer5 img{
     position: absolute;
-    bottom: -521px;
-    right: -27px;
+    right: 100px;
 }
 #layer6 img{
     position: absolute;
@@ -215,53 +215,51 @@ ul{
 }
 #layer7 img{
     position: absolute;
-    bottom: -556px;
-    right: -665px;
+    right: 109px;
+    top: 216px;
 }
 #layer8 img{
     position: absolute;
-    bottom: 44px;
-    right: -310px;
 }
 #layer9 img{
     position: absolute;
-    bottom: -465px;
-    right: -817px;
+    bottom: 465px;
+    right: 817px;
 }
 #layer10 img{
     position: absolute;
-    bottom: -366px;
-    right: -1112px;
+    top: 366px;
+    left: 1243px;
 }
 #layer11 img{
     position: absolute;
-    bottom: -180px;
-    right: -805px;
+    top: 180px;
+    left: 805px;
 }
 #layer12 img{
     position: absolute;
     bottom: 87px;
-    right: -810px;
+    left: 810px;
 }
 #layer13 img{
     position: absolute;
-    bottom: -388px;
-    right: -415px;
+    top: 388px;
+    left: 415px;
 }
 #layer14 img{
     position: absolute;
-    bottom: -37px;
-    right: -895px;
+    top: 37px;
+    left: 895px;
 }
 #layer15 img{
     position: absolute;
-    bottom: -185px;
-    right: -1051px;
+    top: 185px;
+    left: 1223px;
 }
 #layer16 img{
     position: absolute;
     bottom: 112px;
-    right: -283px;
+    left: 283px;
 }
 
 
@@ -303,7 +301,7 @@ nav{
     transition: 0.5s;
 }
 .nav_link:hover{
-    color: white;
+    color: #641b11;
 }
 
 /* МОДАЛКА */
@@ -507,25 +505,25 @@ a.modal_card_icons:hover{
 
 .lines1{
     position: absolute;
-    left: 1000px;
+    left: 920px;
     width: 300px;
-    height: 25px;
+    height: 20px;
     background-color: #b0b2c3;
 }
 .lines2{
     position: absolute;
-    left: 1100px;
-    top: 50px;
+    left: 1000px;
+    top: 40px;
     width: 300px;
-    height: 25px;
+    height: 20px;
     background-color: #1c1d25;
 }
 .lines3{
     position: absolute;
-    left: 1200px;
-    top: 100px;
+    left: 1080px;
+    top: 80px;
     width: 300px;
-    height: 25px;
+    height: 20px;
     background-color: #641b11;
 }
 #skills{
@@ -614,6 +612,7 @@ a.modal_card_icons:hover{
     font-family: 'Play', sans-serif;
     font-size: 70px;
     color: white;
+    margin-top: 25px;
 }
 .port_desrip{
     font-family: 'Play', sans-serif;
@@ -621,8 +620,11 @@ a.modal_card_icons:hover{
     font-weight: 300;
     color: white;
 }
-.port_botn{
+.port_buttons{
     margin-top: 55px;
+}
+.port_botn{
+    width: 100px;
     padding: 15px 40px;
     font-family: 'Play', sans-serif;
     font-size: 25px;
@@ -633,8 +635,28 @@ a.modal_card_icons:hover{
     cursor: pointer;
     background-color: transparent;
     transition: 0.5s;
+    margin-right: 25px;
+    text-decoration: none;
 }
 .port_botn:hover{
+    background-color: white;
+    color: black;
+}
+.port_botn_two{
+    width: 101px;
+    padding: 15px 40px;
+    font-family: 'Play', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    border: 2px solid white;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+    transition: 0.5s;
+    text-decoration: none;
+}
+.port_botn_two:hover{
     background-color: white;
     color: black;
 }
@@ -679,14 +701,14 @@ a.modal_card_icons:hover{
 
 
 .footer_line1{
-    width: 25px;
+    width: 20px;
     height: 200px;
     background-color: #9b2515;
     position: absolute;
     left: 25px;
 }
 .footer_line2{
-    width: 25px;
+    width: 20px;
     height: 200px;
     background-color: #9b2515;
     position: absolute;
@@ -694,7 +716,7 @@ a.modal_card_icons:hover{
     top: 50px;
 }
 .footer_line3{
-    width: 25px;
+    width: 20px;
     height: 200px;
     background-color: #9b2515;
     position: absolute;
@@ -728,7 +750,9 @@ a.modal_card_icons:hover{
     justify-content: center;
     align-items: center;
     margin-top: 50px;
-    gap: 20px;
+    margin-left: 15px;
+    gap: 25px;
+    
 }
 a.footer_icon{
     color: #fdfdfd;
@@ -792,8 +816,17 @@ a.footer_icon:hover{
     .container{
         width: 730px;
     }
+    .modal_about_me{
+        display: none;
+    }
     .home_descrip{
         width: 690px;
+    }
+    .scen{
+        display: none;
+    }
+    .skills_lines{
+        display: none;
     }
     .skills_title{
         font-size: 50px;
@@ -812,10 +845,27 @@ a.footer_icon:hover{
         width: 600px;
         height: 400px;
     }
+    .footer_line{
+        display: none;
+    }
 }
 @media screen and (max-width: 768px) {
     .container{
         width: 370px;
+    }
+    .skills_lines{
+        display: none;
+    }
+    .port_buttons{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .port_botn{
+        margin-bottom: 25px;
+    }
+    .modal_about_me{
+        display: none;
     }
     .scen{
         display: none;
@@ -871,10 +921,6 @@ a.footer_icon:hover{
         width: 600px;
         height: 400px;
     }
-    .port_box{
-        padding-right: 25px;
-        left: 0;
-    }
     .port_list{
         padding-right: 25px;
         width: 350px;
@@ -883,16 +929,25 @@ a.footer_icon:hover{
         height: 450px;
     }
     .port_block li:nth-child(even) .port_box{
-        left: 0;
+        left: 45px;
     }
     .footer_contacts{
         width: 350px;
+    }
+    .footer_line{
+        display: none;
     }
 }
 @media screen and (max-width: 425px) {
     .container{
         width: 370px;
     }
+    .modal_about_me{
+        display: none;
+    }
+    .skills_lines{
+        display: none;
+    }
     .scen{
         display: none;
     }
@@ -947,10 +1002,6 @@ a.footer_icon:hover{
         width: 600px;
         height: 400px;
     }
-    .port_box{
-        padding-right: 25px;
-        left: 0;
-    }
     .port_list{
         padding-right: 25px;
         width: 350px;
@@ -958,19 +1009,31 @@ a.footer_icon:hover{
     .port_sait{
         height: 450px;
     }
+    .port_box{
+        width: 255px;
+    }
     .port_block li:nth-child(even) .port_box{
-        left: 0;
+        left: -50px;
     }
     .footer_contacts{
         width: 350px;
+    }
+    .footer_line{
+        display: none;
     }
 }
 @media screen and (max-width: 375px) {
     .container{
         width: 300px;
     }
+    .modal_about_me{
+        display: none;
+    }
+    .skills_lines{
+        display: none;
+    }
     .home{
-        height: 500px;
+        height: 280px;
     }
     .scen{
         display: none;
@@ -1030,7 +1093,7 @@ a.footer_icon:hover{
         height: 400px;
     }
     .port_box{
-        padding-right: 25px;
+        padding-left: 25px;
         left: 0;
     }
     .port_list{
@@ -1048,6 +1111,9 @@ a.footer_icon:hover{
     }
     .footer_contacts{
         width: 300px;
+    }
+    .footer_line{
+        display: none;
     }
 }
 
